@@ -31,7 +31,9 @@
     "istanbul": "^0.3.2",
     "blanket": "^1.1.6",
     "karma": "^0.12.23",
-    "karma-spec-reporter": "0.0.13"
+    "karma-spec-reporter": "0.0.13",
+    "karma-mocha": "^0.1.9",
+    "karma-chai": "^0.1.0"
   },
   "main": "server/app.js",
   "repository": {
