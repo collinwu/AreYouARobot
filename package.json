@@ -27,7 +27,11 @@
     "mocha": "^1.21.4",
     "chai": "^1.9.1",
     "supertest": "^0.13.0",
-    "protractor": "^1.2.0"
+    "protractor": "^1.2.0",
+    "istanbul": "^0.3.2",
+    "blanket": "^1.1.6",
+    "karma": "^0.12.23",
+    "karma-spec-reporter": "0.0.13"
   },
   "main": "server/app.js",
   "repository": {
