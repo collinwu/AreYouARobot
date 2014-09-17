@@ -23,7 +23,11 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.8.8"
+    "gulp": "^3.8.8",
+    "mocha": "^1.21.4",
+    "chai": "^1.9.1",
+    "supertest": "^0.13.0",
+    "protractor": "^1.2.0"
   },
   "main": "server/app.js",
   "repository": {
