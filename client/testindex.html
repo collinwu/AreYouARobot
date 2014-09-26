@@ -111,8 +111,12 @@
 
 			var sendAuthCode = function(codeUrl) {
 				var code = codeUrl.split('code=')[1];
+<<<<<<< HEAD
 				console.log(codeUrl, "this is codeUrl");
 				console.log(code, "this is the code isolated");
+=======
+				// console.log(code, "this is the code isolated");
+>>>>>>> FB OAuth working. Not saving to DB and no jwt issued yet.
 				$.ajax({
 					url: 'auth/fb',
 					method: 'POST',
