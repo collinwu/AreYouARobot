@@ -22,10 +22,14 @@ module.exports = function(app, express) {
 
 	// Routing
 	var userRouter = express.Router();
+	var authHandling = express.Router();
 
 	app.use('/api/user', userRouter); // User router for all user requests
+	// require('../api/user/user.router.js')(userRouter);
+	app.use('/auth', authHandling);
+	require('../auth/authRouting.js')(authHandling);
+
 	app.use(helpers.errorLogger);
 	app.use(helpers.errorHandler); 
-	// require('../api/user/user.router.js')(userRouter);
 
 };
