@@ -3,6 +3,7 @@
 (function(){
 
   //Global object for storing callback functions
+  // Quick comment for a new commit
   window._app = {};
 
   var defaultRouteConfig = function($urlRouterProvider){
@@ -11,17 +12,20 @@
 
   var restangularConfig = function(Restangular, $window, $state){
 
-    var jwtRequestInterceptor = function(element, operation, route, url, headers, params, httpConfig){
+    var jwtRequestInterceptor = function(element, operation, route, url, headers){
       var jwt = $window.localStorage.getItem('jwt');
+      console.log('this is jwt: ', jwt);
       if (jwt){
         headers['x-access-token'] = jwt;
+        console.log(headers['x-access-token'], 'THIS IS HEADERS[\'x-access-token\']');
+        console.log(headers, 'THIS IS HEADERS');
       }
       return {
         headers: headers
       };
     };
 
-    var errorResponseInterceptor = function(response, deferred, responseHandler) {
+    var errorResponseInterceptor = function(response) {
       var isUnauthorized = response.status === 401;
       var routeToLogin = response.data ? response.data.routeToLogin : false;
 
@@ -37,13 +41,14 @@
 
   angular
     .module('AYARApp', [
+      'ngMaterial',
       'ui.router',
       'restangular'
       ])
 
     .config(['$urlRouterProvider', defaultRouteConfig])
 
-    .run(['Restangular', '$window', '$state', restangularConfig])
+    .run(['Restangular', '$window', '$state', restangularConfig]);
 
 })();
 
@@ -52,7 +57,7 @@
 // angular.module('AYARApp', [
 //   'ui.router'
 //   ])
-// 	.config(['$urlRouterProvider', function ($urlRouterProvider) {
+//  .config(['$urlRouterProvider', function ($urlRouterProvider) {
 //     $urlRouterProvider
 //       // .when('/code=', '/game')
 //       .otherwise('/login');
