@@ -1,24 +1,37 @@
 <!doctype html>
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../lib/bower_components/angular-material/angular-material.css">
     <link rel="stylesheet" href="lib/bower_components/bootstrap/dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="app/app.css" />
     <link rel="stylesheet" href="app/homepage/homepage.css"/>
     <link rel="stylesheet" href="app/profile/profile.css"/>
     <link rel="stylesheet" href="app/game/game.css"/>
+    <link rel="stylesheet" href="app/game/game.panel.giveAnswer/game.panel.giveAnswer.css"/>
+    <link rel="stylesheet" href="app/game/game.all.chooseAnswer/game.all.chooseAnswer.css"/>
+    <link rel="stylesheet" href="app/game/game.all.displayResults/game.all.displayResults.css"/>
+    <link rel="stylesheet" href="app/game/game.all.createOrJoinGame/game.all.createOrJoinGame.css"/>
+    <link rel="stylesheet" href="/assets/fonts.css"/>
+    <link rel="stylesheet" href="lib/bower_components/sweetalert/lib/sweet-alert.css"/>
   </head>
 
-  <body ng-app="AYARApp">
+  <body flex ng-app="AYARApp">
     <div id="fb-root"></div>
-
     <!-- <img id="main" src="http://www.robotaton.com/images/blogbot.png" /> -->
     <div ui-view></div>
 
     <script src="lib/bower_components/angular/angular.js"></script>
     <script src="lib/bower_components/ui-router/release/angular-ui-router.js"></script>
+    <script src="lib/bower_components/angular-animate/angular-animate.js"></script>
     <script src="lib/bower_components/angular-mocks/angular-mocks.js"></script>
     <script src="lib/bower_components/lodash/dist/lodash.js"></script>
     <script src="lib/bower_components/restangular/src/restangular.js"></script>
-    <script src="lib/bower_components/angular-socket-io/socket.js"></script>
+    <script src="lib/bower_components/angular-material/angular-material.js"></script>
+    <script src="lib/bower_components/hammerjs/hammer.js"></script>
+    <script src="lib/bower_components/sweetalert/lib/sweet-alert.js"></script>
 
     <script src="app/app.js"></script>
     <script src="app/homepage/homepage.controller.js"></script>
@@ -31,6 +44,7 @@
     <script src="app/profile/profile.js"></script>
     <script src="app/game/game.controller.js"></script>
     <script src="app/game/game.js"></script>
+    <script src="app/team/team.js"></script>
 
     <script src="app/game/game.all.chooseAnswer/game.all.chooseAnswer.controller.js"></script>
     <script src="app/game/game.all.chooseAnswer/game.all.chooseAnswer.js"></script>
@@ -61,10 +75,6 @@
 
     <script src="app/game/game.panel.waitingForQuestion/game.panel.waitingForQuestion.controller.js"></script>
     <script src="app/game/game.panel.waitingForQuestion/game.panel.waitingForQuestion.js"></script>
-
-    <script src="app/game/game.all.waitForStart/game.all.waitForStart.controller.js"></script>
-    <script src="app/game/game.all.waitForStart/game.all.waitForStart.js"></script>
-
     <script src="app/game/game.panel.waitingForResponses/game.panel.waitingForResponses.controller.js"></script>
     <script src="app/game/game.panel.waitingForResponses/game.panel.waitingForResponses.js"></script>
 
@@ -76,4 +86,4 @@
       var socket = io();
     </script>
   </body>
-  
+</html>
