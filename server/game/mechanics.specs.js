@@ -1,6 +1,5 @@
 'use strict';
 
-<<<<<<< HEAD
 var should = require('chai').should();
 var request = require('supertest');
 var app = require('../app.js');
