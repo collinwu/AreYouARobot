@@ -1,0 +1,127 @@
+form {
+  margin-top: 6vh;
+}
+
+textarea, input[type="text"] {
+  font-size: 3.5vh;
+}
+
+material-button {
+  margin-top: 2vh;
+  /*background-color: antiquewhite;*/
+  background-color: #D13F32;
+  font-size: 3vh;
+  white-space: wrap;
+  width: 10vw;
+  font-family: courier;
+}
+
+.newOrJoinButton .material-button-raised {
+  background-color: antiquewhite;
+}
+
+material-button .material-button-inner {
+  font-size: 3vh;
+  white-space: wrap;
+}
+
+material-input-group {
+  font-size: 8vh;
+}
+
+.material-tile-content h2 {
+  padding-top: .5vh;
+  font-size: 3.5vh;
+  overflow: hidden;
+}
+
+material-input-group input {
+  font-size: 3vh;
+  color: black;
+  margin-top: 1vh;
+  padding: .5em;
+  height: 7vh;
+  width: 35vw;
+  text-align: center;
+  font-family: courier;
+  background-color: antiquewhite;
+  font-weight: normal;
+}
+
+material-input-group label {
+  color: #2B344D;
+  font-family: courier;
+  font-size: 5vh;
+  font-weight: normal;
+  margin-bottom: 6vh;
+}
+
+material-tabs {
+  font-family: cartoonblocks;
+}
+
+.navBar material-tab-label {
+  color: black;
+}
+
+/*material-tab {
+  font-size: 8vh;
+  height: 10vh;
+  background-color: #D13F32;
+}*/
+
+.tabs-header {
+  height: 10vh;
+}
+
+material-tab material-tab-label.active {
+  color: #1D7872;
+}
+
+material-tab:hover material-tab-label{
+  color: antiquewhite;
+}
+
+*:focus {
+  border: none;
+}
+
+material-divider {
+  height: 1.5px;
+  /*width: 70%;*/
+  background-color: antiquewhite;
+}
+
+material-ink-bar {
+  background: antiquewhite;
+}
+
+material-tab .material-ripple-container {
+  color: #8CBEB2;
+}
+
+.chooseAnswer {
+  padding-top: 1em;
+}
+
+.tabs-header-items-container {
+  background-color: antiquewhite;
+}
+
+.dialog {
+  background-color: #FEFFE3;
+  /*width: 55vw;
+  height: 90vh;
+  background-color: antiquewhite;
+  overflow: scroll;
+  font-family: Courier;
+  padding: 1vw;*/
+}
+
+.teamButton {
+  top: -1vh;
+}
+
+.dialogueOkay {
+  /*background-color: white;*/
+}

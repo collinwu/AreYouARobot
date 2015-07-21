@@ -11,16 +11,20 @@ ehthumbs.db
 Thumbs.db
 
 # temp files
+results
 public
 dist
 .tmp
 .idea
+setuptools-5.8.zip
+server/*.txt
 
 # public modules
 */node_modules/
 */bower_components/
 platforms/
 plugins/
+server/config/devConstants.js
 
 # Logs
 logs

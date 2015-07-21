@@ -1,0 +1,34 @@
+ <material-dialog class="dialog" aria-label="team">
+  <div class="dialog-content">
+
+    <material-content ng-controller="HomepageController">
+    <material-list>
+      <material-item ng-repeat="item in team">
+        <material-item-content>
+          <div class="material-tile-left">
+            <img style="height: 25vh; width: 12vw; border-radius: 15vw"ng-src="{{item.face}}" class="face" alt="{{item.who}}">
+          </div>
+          <div class="material-tile-content">
+            <h2 style="font-size: 6vh;">{{item.what}}</h2>
+            <h3 style="font-size: 3vh">{{item.who}}</h3>
+            <p style="font-size: 2vh">
+              {{item.notes}}
+            </p>
+            <div class="social">
+              <span><a href="{{item.git}}"><img class="icon" src="https://camo.githubusercontent.com/f36c652cc1c525b9abe7f93049b69a1909f35650/687474703a2f2f6b6f7269796d2e6769746875622e696f2f7072696e745f6f2f696d616765732f67682e706e67" /></a></span>
+              <span><a href="{{item.linkedin}}"><img class="icon" style="height: 32px; width: 32px" src="http://www.circlesideways.com/wp-content/themes/brazendev4_theme/images/in.png" /></a></span>
+              <span><a href="{{item.homepage}}"><img class="icon" style="height: 40px; width: 32px" src="http://freeiconbox.com/icon/256/9282.png" /></a></span>
+            </div>
+          </div>
+        </material-item-content>
+        <material-divider inset ng-if="!$last"></material-divider>
+      </material-item>
+    </material-list>
+  </material-content>
+  </div>
+  <div class="dialog-actions">
+    <material-button class="teamButton" ng-click="hide()">
+      Okay
+    </material-button>
+  </div>
+</material-dialog>

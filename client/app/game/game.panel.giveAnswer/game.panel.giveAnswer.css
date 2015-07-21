@@ -1,0 +1,45 @@
+.face {
+  border-radius: 14vw;
+  border: 1px solid #ddd;
+  width: 14vw;
+  margin: 16px;
+}
+
+.botFace {
+  width: 10vw;
+}
+
+.answerInput {
+  margin-top: 2vh;
+  font-size: 4vh;
+}
+
+.answerInfo {
+  margin-top: 2vh;
+  height: 25vh;
+  font-family: Courier;
+  /*overflow: scroll;*/
+}
+
+.answerInfoContainer {
+  /*display: scroll;*/
+}
+/*.robotQuote {
+  font-size: 10vh;
+}*/
+
+.answerFaces {
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  width: 55px;
+  margin: 16px;
+}
+
+.gameQuestion {
+  overflow: scroll;
+  font-size: 5vh;
+}
+
+.answerInfo h3 {
+  font-size: 3.5vh;
+}
